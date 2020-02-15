@@ -1,6 +1,9 @@
 //moment js code
 $("#currentDay").text(moment().format('MMMM Do, YYYY'));
 
+//curent time for past present future
+var currentTime= moment().format ("HH");
+
 //timeblocks
 var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
 
@@ -12,7 +15,6 @@ for (var i = 0; i < hours.length; i++) {
     var newRow = $("<div class='row'>");
     var hourCol = $("<div class='col-2'>");
     hourCol.text(hours[i]);
-
     var titleCol = $("<div class='col-8'>");
 //creating text input fields
     var textField = $("<textarea>");
@@ -28,4 +30,7 @@ for (var i = 0; i < hours.length; i++) {
     newRow.append(hourCol, titleCol, saveCol);
 
     $("#calendar-view").append(newRow);
+
+if 
+
 }
