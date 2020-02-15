@@ -30,7 +30,20 @@ for (var i = 0; i < hours.length; i++) {
     newRow.append(hourCol, titleCol, saveCol);
 
     $("#calendar-view").append(newRow);
+//color changes relative to time function loop
+    if(currentTime > i) {
+        newRow.addClass("past");
+    }
+    else if(currentTime === i) {
+        newRow.addClass("present");
+    }
+    else if(currentTime < i ) {
+        newRow.addClass("future");
+    }
+// //save button function 
+//$("saveBtn").click(function () {
+   // var 
 
-if 
+
 
 }
